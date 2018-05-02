@@ -57,7 +57,7 @@
         },
         "patches": {
             "drupal/core": {
-                "Sort ckeditor plugins" : "docroot/profiles/contrib/thunder/patches/2952221-4.patch"
+                "Sort ckeditor plugins" : "https://www.drupal.org/files/issues/2018-05-02/2952221-4.patch"
             },
             "drupal/media_entity": {
                 "Make the label form element non-required in the entity form": "https://www.drupal.org/files/issues/2934289-2813685-21.patch"
