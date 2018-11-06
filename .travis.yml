@@ -25,6 +25,7 @@ sudo: required
 branches:
   only:
     - /^8\.x\-[0-9]+\.x$/
+    - feature/do-not-test-text-file-changes
 
 mysql:
   database: drupal
