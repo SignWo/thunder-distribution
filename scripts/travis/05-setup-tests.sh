@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+if [[ ${SKIP_TEST} == true ]]; then
+    exit
+fi
+
 # Rebuild caches and start servers
 cd ${TEST_DIR}/docroot
 

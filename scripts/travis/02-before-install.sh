@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+if [[ ${SKIP_TEST} == true ]]; then
+    exit
+fi
+
 # Download thunder from drupal.org with drush
 drush_download_thunder() {
     DOWNLOAD_PATH=$1

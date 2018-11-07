@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+if [[ ${SKIP_TEST} == true ]]; then
+    exit
+fi
 
 # Install thunder and enable Test module
 # in provided folder

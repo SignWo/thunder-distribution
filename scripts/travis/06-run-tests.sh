@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+if [[ ${SKIP_TEST} == true ]]; then
+    exit
+fi
+
 # Run Drupal tests (@group Thunder)
 cd ${TEST_DIR}/docroot
 
