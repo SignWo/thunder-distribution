@@ -37,9 +37,14 @@ if [[ ${INSTALL_METHOD} == "" ]]; then
   export INSTALL_METHOD=composer
 fi;
 
+ONLY_TEXT_FILE_CHANGES=true
 for file in $( git diff-tree --no-commit-id --name-only -r HEAD); do
-    printf "File: $file\n"
+    if [[ (${file} != *.txt) &&  (${file} != *.md) ]]; then
+        ONLY_TEXT_FILE_CHANGES=false
+    fi
 done
+
+export ${ONLY_TEXT_FILE_CHANGES}
 
 # Manual overrides of environment variables by commit messages. To override a variable add something like this to
 # your commit message:

@@ -70,6 +70,7 @@ create_testing_dump() {
 
     php ./core/scripts/db-tools.php dump-database-d8-mysql | gzip > thunder.php.gz
 }
+
 # Build current revision of thunder
 if [[ ${INSTALL_METHOD} == "drush_make" ]]; then
     drush_make_thunder
