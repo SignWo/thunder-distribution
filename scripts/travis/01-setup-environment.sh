@@ -46,7 +46,7 @@ if [[ ${TRAVIS_PULL_REQUEST} == true ]]; then
         fi
     done
 else
-    SKIP_TEST=false
+    SKIP_TEST=true
 fi
 export ${SKIP_TEST}
 
