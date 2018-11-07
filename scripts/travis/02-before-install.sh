@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo ${SKIP_TEST}
+
 if [[ ${SKIP_TEST} == true ]]; then
     exit
 fi

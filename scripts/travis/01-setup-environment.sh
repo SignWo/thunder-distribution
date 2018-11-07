@@ -50,6 +50,8 @@ else
 fi
 export ${SKIP_TEST}
 
+echo ${SKIP_TEST}
+
 # Manual overrides of environment variables by commit messages. To override a variable add something like this to
 # your commit message:
 # git commit -m="Your commit message [TEST_UPDATE=true]"
